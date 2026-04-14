@@ -1,0 +1,19 @@
+# Core
+requests>=2.31.0
+httpx>=0.24.0
+urllib3>=2.0.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+html5lib>=1.1
+click>=8.1.0
+rich>=13.0.0
+colorama>=0.4.6
+jinja2>=3.1.0
+markupsafe>=2.1.0
+pyyaml>=6.0.0
+python-dateutil>=2.8.0
+
+# Optional - browser verification
+# playwright>=1.40.0
+# selenium>=4.10.0
+

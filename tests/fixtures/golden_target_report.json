@@ -1,0 +1,46 @@
+{
+  "target": "https://golden.example",
+  "scan_mode": "full",
+  "statistics": {
+    "urls_crawled": 4,
+    "params_found": 7,
+    "payloads_tested": 18,
+    "requests_sent": 42,
+    "vulnerabilities_found": 1,
+    "errors": 0
+  },
+  "telemetry": {
+    "request_count": 42,
+    "latency_ms": {"p50": 18.4, "p95": 92.7, "avg": 24.1, "max": 130.2, "samples": 42},
+    "status_buckets": {"2xx": 40, "3xx": 1, "4xx": 1, "5xx": 0, "error": 0},
+    "connection_pool": {"configured_max": 20, "peak_inflight": 6, "utilization_ratio": 0.3}
+  },
+  "auth": {
+    "authenticated": true,
+    "auto_reauth": true,
+    "plugin": "csrf-preflight",
+    "reauth_count": 1,
+    "auth_failures": 0,
+    "last_event": {"event": "login-success", "status_code": 200}
+  },
+  "learning": {
+    "failure_reasons": {"encoded": 3, "blocked": 1}
+  },
+  "vulnerabilities": [
+    {
+      "type": "reflected_xss",
+      "severity_level": "confirmed",
+      "parameter": "q",
+      "url": "https://golden.example/search?q=1",
+      "payload": "<svg/onload=alert(1) class=akha>",
+      "confidence": 92,
+      "exploitability_score": 87,
+      "validated": true,
+      "context": {"Location": "HTML"},
+      "browser_matrix": {"chromium": {"executed": true, "method": "dialog"}}
+    }
+  ],
+  "waf": {"detected": false, "name": "None", "confidence": 0},
+  "csp": {"has_csp": false},
+  "oast_callbacks": []
+}

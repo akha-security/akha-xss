@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "akha-scanner"
+version = "1.0.0"
+description = "AKHA-XSS Detection Framework"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "AKHA Security", email = "caneraktas12@gmail.com" },
+]
+license = { text = "MIT" }
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Topic :: Security",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/akha-security/akha-xss"
+"Bug Tracker" = "https://github.com/akha-security/akha-xss/issues"
+"Source Code" = "https://github.com/akha-security/akha-xss"
+
+[project.scripts]
+akha-xss = "akha.__main__:_entry"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["akha*"]
+
+[tool.setuptools.package-data]
+akha = [
+  "reports/templates/*.html",
+  "reports/templates/assets/*.css",
+  "reports/templates/assets/*.js",
+  "data/wordlists/*.txt",
+  "data/learning/*.json",
+]

@@ -1,0 +1,83 @@
+# AKHA Scanner Configuration
+
+# Scan Mode: full or url
+scan_mode: full
+
+# Payload Strategy: auto, builtin, custom, hybrid
+payload_strategy: auto
+
+# Crawler Settings
+max_depth: 5
+max_pages: 1000
+follow_redirects: true
+parse_js: true
+
+# HTTP Settings
+timeout: 30
+user_agent: "AKHA-Scanner/1.0"
+verify_ssl: true
+allow_ssl_fallback: false
+proxy: null  # Example: "http://127.0.0.1:8080"
+proxy_list: null  # Example: "proxies.txt"
+proxy_cooldown_seconds: 60
+rate_limit: 10
+per_host_rate_limit: true
+per_path_rate_limit: true
+path_rate_multiplier: 0.75
+endpoint_backoff_profiles: true
+endpoint_backoff_profile_overrides: null
+scan_budget_seconds: 0
+scan_budget_requests: 0
+scan_budget_payloads: 0
+max_payloads_per_param: 0
+max_payloads_per_endpoint: 0
+budget_auto_fallback: true
+budget_fallback_trigger: 0.85
+distributed_task_queue: true
+dynamic_task_lease: true
+task_lease_seconds: 120
+task_max_retries: 3
+task_worker_id: null
+resume_checkpoint_interval_seconds: 20
+strict_scope_guard: true
+scope_guard_max_pages: 5000
+
+# Parameter Discovery
+context_aware: true
+deep_scan: false
+dynamic_crawling: true
+stateful_spa_discovery: true
+spa_state_transition_budget: 8
+discovery_profile: auto
+risk_prioritization: true
+risk_priority_top_k: 300
+
+# XSS Detection
+enable_waf_bypass: true
+aggressive_mode: false
+validate_findings: true
+test_post_methods: false
+probe_sensitive: false
+execution_verify_firefox: false
+
+# Output
+output_dir: output
+report_format: html
+verbose: false
+quiet: false
+
+# Advanced
+threads: 5
+learning_enabled: true
+payload_failure_taxonomy: true
+payload_context_bandit: true
+payload_minimal_grammar: true
+payload_similarity_warm_start: true
+ucb_exploration_factor: 1.4
+payload_context_weight: 0.25
+payload_encoding_weight: 0.15
+payload_waf_confidence_weight: 0.10
+payload_context_multipliers: null
+auto_reauth: true
+auth_plugin: null  # csrf-preflight | bearer-refresh
+auth_plugin_options: null
