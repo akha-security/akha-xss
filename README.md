@@ -1,8 +1,8 @@
 <div align="center">
-<img width="1406" height="356" alt="banner" src="<img width="1408" height="768" alt="banner" src="https://github.com/user-attachments/assets/a88c0ee9-df04-4d7c-aebf-512839f3c644" />
-" />
+<img width="1408" height="768" alt="banner" src="https://github.com/user-attachments/assets/c416f11f-282d-42fc-a67c-d5cbc361ce97" />
 
   <br/>
+  
   <h1>🎯 AKHA XSS Scanner</h1>
   <p><strong>AKHA-XSS Detection Framework</strong></p>
   <p>
