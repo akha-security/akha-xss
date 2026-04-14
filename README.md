@@ -486,5 +486,4 @@ If you wish to add a new engine (e.g., an SSRF or SQLi engine), you can simply e
 <div align="center">
 <b>Developed with ❤️ for the Security Community. Licensed under MIT.</b>
 </div>
-# akha-xss
-#
+
