@@ -1,5 +1,5 @@
-<div align="center">
-<img width="1406" height="356" alt="banner" src="https://github.com/user-attachments/assets/84e7fd3e-8f95-4c69-8804-e8629e4da14c" />
+<img width="1408" height="768" alt="banner" src="https://github.com/user-attachments/assets/98504cba-a2b0-409a-a848-a923964e52c1" />
+
 
   <br/>
   <h1>🎯 AKHA XSS Scanner</h1>
