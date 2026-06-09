@@ -11,15 +11,6 @@
     Engineered for security researchers, bug bounty hunters, and DevSecOps pipelines. AKHA delivers high-impact Cross-Site Scripting (XSS) vulnerability detection with a confidence-based scoring model, backed by headless browser verification and intelligent payload mutators.
   </p>
 
-  <p>
-    <a href="#features">Features</a> •
-    <a href="#adaptive-payload-learning-why-akha-is-different">Adaptive Learning</a> •
-    <a href="#how-it-works">How It Works</a> •
-    <a href="#installation">Installation</a> •
-    <a href="#usage-guide">Usage</a> •
-    <a href="#architecture">Architecture</a>
-  </p>
-</div>
 
 ---
 
