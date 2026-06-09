@@ -1,0 +1,20 @@
+name: imperva
+display_name: Imperva Incapsula
+headers:
+  - x-cdn
+  - x-iinfo
+cookies:
+  - incap_ses
+  - visid_incap
+  - nlbi_
+response_patterns:
+  - incapsula
+  - imperva
+  - Powered By Incapsula
+  - Request unsuccessful. Incapsula incident
+status_codes:
+  - 403
+priority: 9
+payloads:
+  - "<isindex action=javascript:alert(1) type=image>"
+  - "<object data='javascript:alert(1)'>"

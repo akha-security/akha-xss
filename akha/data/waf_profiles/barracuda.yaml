@@ -1,0 +1,17 @@
+name: barracuda
+display_name: Barracuda WAF
+headers:
+  - barra_counter_session
+cookies:
+  - barra_counter_session
+  - BNI__BARRACUDA_LB_COOKIE
+response_patterns:
+  - barracuda
+  - Barracuda Networks
+status_codes:
+  - 403
+priority: 7
+payloads:
+  - "<img src=x onerror=alert(1) id='test'>"
+  - "<svg onload=alert(1) id='test'>"
+  - "<body onload=alert(1) id='test'>"

@@ -1,0 +1,17 @@
+name: modsecurity
+display_name: ModSecurity
+headers:
+  - modsecurity
+server_pattern: mod_security|NOYB
+response_patterns:
+  - mod_security
+  - modsecurity
+  - rules triggered
+  - owasp modsecurity core rule set
+status_codes:
+  - 403
+  - 406
+  - 501
+priority: 7
+payloads:
+  - "<<script>alert(1)//<</script>"

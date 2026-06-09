@@ -1,0 +1,18 @@
+name: generic
+display_name: Generic WAF
+response_patterns:
+  - access denied
+  - request blocked
+  - web application firewall
+  - suspicious activity
+  - please verify you are human
+status_codes:
+  - 403
+  - 406
+  - 429
+  - 503
+priority: 3
+payloads:
+  - "<img src=x onerror=alert(1)>"
+  - "<svg/onload=alert(1)>"
+  - "'><img src=x onerror=alert(1)>"

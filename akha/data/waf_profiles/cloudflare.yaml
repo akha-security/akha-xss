@@ -1,0 +1,28 @@
+name: cloudflare
+display_name: Cloudflare
+headers:
+  - cf-ray
+  - cf-request-id
+  - cf-cache-status
+  - cf-mitigated
+cookies:
+  - __cf_bm
+  - cf_clearance
+server_pattern: cloudflare
+response_patterns:
+  - Attention Required! | Cloudflare
+  - Performance & security by Cloudflare
+  - enable JavaScript and cookies to continue
+status_codes:
+  - 403
+  - 503
+  - 520
+  - 521
+  - 522
+  - 523
+  - 524
+priority: 10
+payloads:
+  - "<details open ontoggle=alert(1)>"
+  - "<video><source onerror=alert(1)>"
+  - "<input onfocus=alert(1) autofocus>"

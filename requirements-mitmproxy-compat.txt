@@ -1,0 +1,7 @@
+# Optional compatibility pins for environments that already contain mitmproxy 12.2.x.
+# Use this file only when pip reports mitmproxy dependency conflicts.
+mitmproxy_rs>=0.12.6,<0.13
+asgiref>=3.2.10,<=3.10.0
+tornado>=6.5.0,<=6.5.2
+urwid>=2.6.14,<=3.0.3
+wsproto>=1.0,<=1.2.0

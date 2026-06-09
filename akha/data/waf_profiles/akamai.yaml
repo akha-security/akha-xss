@@ -1,0 +1,17 @@
+name: akamai
+display_name: Akamai
+headers:
+  - x-akamai-request-id
+  - akamai-origin-hop
+  - x-akamai-transformed
+server_pattern: AkamaiGHost|AkamaiNetStorage
+response_patterns:
+  - Reference #
+  - Access Denied
+  - akamai
+status_codes:
+  - 403
+priority: 9
+payloads:
+  - "%3cscript%3ealert(1)%3c/script%3e"
+  - "<svg onload\t=alert(1)>"

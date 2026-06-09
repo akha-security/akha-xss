@@ -1,0 +1,19 @@
+name: sucuri
+display_name: Sucuri
+headers:
+  - x-sucuri-id
+  - x-sucuri-cache
+  - x-sucuri-block
+server_pattern: Sucuri
+response_patterns:
+  - sucuri
+  - cloudproxy
+  - Sucuri WebSite Firewall
+  - Access Denied - Sucuri Website Firewall
+status_codes:
+  - 403
+priority: 7
+payloads:
+  - "<img src=x onerror=alert(1) title='test'>"
+  - "<svg onload=alert(1) title='test'>"
+  - "<img src=x onerror=alert(1) alt='test'>"

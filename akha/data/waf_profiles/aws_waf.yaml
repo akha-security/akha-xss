@@ -1,0 +1,19 @@
+name: aws_waf
+display_name: AWS WAF
+headers:
+  - x-amzn-requestid
+  - x-amzn-errortype
+  - x-amz-cf-id
+  - x-amzn-waf-action
+server_pattern: awselb|CloudFront
+response_patterns:
+  - Request blocked
+  - AWSWAF
+  - automated access to this page has been blocked
+status_codes:
+  - 403
+priority: 8
+payloads:
+  - "<img src=x onerror=alert(1) style=''>"
+  - "<svg onload=alert(1) style=''>"
+  - "<body onload=alert(1) style=''>"

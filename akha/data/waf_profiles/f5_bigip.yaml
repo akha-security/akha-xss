@@ -1,0 +1,21 @@
+name: f5_bigip
+display_name: F5 BIG-IP ASM
+headers:
+  - x-cnection
+  - x-wa-info
+cookies:
+  - TS
+  - BIGipServer
+  - f5_cspm
+server_pattern: BigIP|BIG-IP|F5
+response_patterns:
+  - The requested URL was rejected
+  - Please consult with your administrator
+  - support ID
+status_codes:
+  - 403
+priority: 8
+payloads:
+  - "<img src=x onerror=alert(1) class=bypass>"
+  - "<svg onload=alert(1) class=bypass>"
+  - "<iframe onload=alert(1) class=bypass>"
