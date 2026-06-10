@@ -1,16 +1,18 @@
 <div align="center">
+
 <img width="1407" height="397" alt="banner" src="https://github.com/user-attachments/assets/262d9649-1368-4aa6-b51c-35953e406484" />
 
+<h1>🎯 AKHA XSS Scanner</h1>
 
+<p><strong>AKHA-XSS Detection Framework</strong></p>
 
-  <br/>
-  
-  <h1>🎯 AKHA XSS Scanner</h1>
-  <p><strong>AKHA-XSS Detection Framework</strong></p>
-  <p>
-    Engineered for security researchers, bug bounty hunters, and DevSecOps pipelines. AKHA delivers high-impact Cross-Site Scripting (XSS) vulnerability detection with a confidence-based scoring model, backed by headless browser verification and intelligent payload mutators.
-  </p>
+<p>
+  Engineered for security researchers, bug bounty hunters, and DevSecOps pipelines.<br/>
+  AKHA delivers high-impact Cross-Site Scripting (XSS) vulnerability detection with a confidence-based scoring model,<br/>
+  backed by headless browser verification and intelligent payload mutators.
+</p>
 
+</div>
 
 ---
 
@@ -93,7 +95,7 @@ Result in practice:
 
 ---
 
-## 🧠 Deep Dive: How AKHA Works (The Pipeline)
+## 🔬 Deep Dive: How AKHA Works (The Pipeline)
 
 The true differentiator of AKHA is its execution pipeline. For every discovered endpoint and parameter, AKHA follows the same deterministic workflow:
 
@@ -377,7 +379,7 @@ See the sanitized [example report snapshot](docs/example-report.md) for the fiel
 
 ---
 
-## 🚀 Core Capability Set
+## 🛠️ Core Capability Set
 
 AKHA ships with a complete adaptive scanning stack by default.
 
